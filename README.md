@@ -1,3 +1,12 @@
+# Comandos para execução
+
+## Executar a transação
+ruby transfer.rb
+
+## Executar os testes
+ruby transfer_spec.rb
+
+
 # Hiring
 Projeto exclusivo para processo seletivo
 
