@@ -1,24 +1,30 @@
-# README
+# Transação de BTC Testnet via API Block.io
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Pré Requisitos
 
-Things you may want to cover:
+	- Rails: >5.1
+	- Ruby: >2.4
 
-* Ruby version
+## Configs Iniciais
 
-* System dependencies
+Puxando depêndencias do projeto:
+```sh
+$ bundle install
+```
 
-* Configuration
+Iniciando servidor:
+```sh
+$ rails s
+```
 
-* Database creation
+Aplique em sua URL:
+```sh
+localhost:3000/transactions/new
+```
 
-* Database initialization
+### Testes
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Realizando testes:
+```sh
+$ rake test
+```
