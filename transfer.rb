@@ -13,14 +13,13 @@ class Transfer
   def transfer
     begin
       BlockIo.set_options :api_key=>$api_key, :pin =>$pin, :version => 2
-      BlockIo.withdraw :amounts => '0.1', :to_addresses => @to, :from_addresses => @from
+      BlockIo.withdraw :amounts => '1.0', :to_addresses => @to, :from_addresses => @from
     rescue Exception => e
      return e.message
    end
   end
 
 end
-
 
 transferClass = Transfer.new("2NGAyhPa8EqoE6uFU9UurkDgxmzdr9AJJC7","mnYoahiweETgdXsfY92GCWA6HoRj9knQUw")
 transferClass.transfer()
