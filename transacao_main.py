@@ -3,8 +3,8 @@ import os
 
 api_key = os.environ['BLOCKIO_API_KEY']
 pin = os.environ['BLOCKIO_PIN']
+source_wallet = os.environ['SOURCE_WALLET']'
 destiny_wallet = 'mnYoahiweETgdXsfY92GCWA6HoRj9knQUw'
-source_wallet = '2N1Sc7EKejrGiWceitFmXrAorZtfHs3pCxb'
 api_version = 2
 amount = '1'
 

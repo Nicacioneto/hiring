@@ -8,8 +8,8 @@ import time
 
 API_KEY = os.environ['BLOCKIO_API_KEY']
 PIN = os.environ['BLOCKIO_PIN']
+SOURCE_WALLET = os.environ['SOURCE_WALLET']'
 DESTINY_WALLET = 'mnYoahiweETgdXsfY92GCWA6HoRj9knQUw'
-SOURCE_WALLET = '2N1Sc7EKejrGiWceitFmXrAorZtfHs3pCxb'
 API_VERSION = 2
 AMOUNT = '0.00001'
 NETWORK_FEE = '0.00001944'

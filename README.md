@@ -9,11 +9,16 @@ Projeto exclusivo para processo seletivo
 
 ## Instruções de execução
 1. Declare as variáveis de ambiente
-    Por motivos de segurança as variáveis BLOCKIO_API_KEY e o BLOCKIO_PIN estão sendo utilizadas a partir de variáveis de ambiente, portanto antes de executar o teste atribua valores a essas duas variáveis:
+    Por motivos de segurança as variáveis BLOCKIO_API_KEY, BLOCKIO_PIN e SOURCE_WALLET estão sendo utilizadas a partir de variáveis de ambiente, portanto antes de executar o teste atribua valores a essas duas variáveis:
     
     > export BLOCKIO_API_KEY="sua api key"
     
     > export BLOCKIO_PIN="seu pin"
+
+    > export SOURCE_WALLET="sua carteira de criptomoedas"
+
+    O código da carteira deve coincidir com a API KEY da criptomoeda desejada.
+    
 2. Ative a virtualenv dentro da pasta `hiring`
 
     > virtualenv hiring
