@@ -14,7 +14,7 @@ API_VERSION = 2
 AMOUNT = '0.00001'
 NETWORK_FEE = '0.00001944'
 
-if (BLOCKIO_API_KEY is None) or (BLOCKIO_PIN is None):
+if (API_KEY is None) or (PIN is None):
     raise Exception("NEED env: BLOCKIO_API_KEY && BLOCKIO_PIN")
 
 transaction_block = Transacao(        

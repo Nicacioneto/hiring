@@ -14,7 +14,15 @@ Projeto exclusivo para processo seletivo
     > export BLOCKIO_API_KEY="sua api key"
     
     > export BLOCKIO_PIN="seu pin"
+2. Ative a virtualenv dentro da pasta `hiring`
+
+    > virtualenv hiring
+
+    > source hiring/bin/activate
+
 2. Instale os requisitos para rodar o sistema. Essa informação está no arquivo requirements.txt
+
+    > pip install -r requirements.txt
 
 3. Para Transferir o BTCT para a carteira definida execute o script transacao_main.py, ele transferirá 1 BTCT para a carteira. (minha conta só tem 2.9 BTCT, só poderá ser feito 2 vezes com esse valor).
 
@@ -29,7 +37,9 @@ Projeto exclusivo para processo seletivo
 
     O método send_cryptocoin faz uma retirada de cryptomoeda de uma carteira para outra.
 
+6. Para sair do ambiente virtualenv digite:
 
+    > deactivate
 ## Objetivo
 Realizar transação de Bitcoin Testnet usando API
 
