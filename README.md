@@ -7,7 +7,44 @@ Projeto exclusivo para processo seletivo
 3. Quando tiver terminado, me envie um pull request
 4. Pronto :)
 
+## Instruções de execução
+1. Declare as variáveis de ambiente
+    Por motivos de segurança as variáveis BLOCKIO_API_KEY, BLOCKIO_PIN e SOURCE_WALLET estão sendo utilizadas a partir de variáveis de ambiente, portanto antes de executar o teste atribua valores a essas duas variáveis:
+    
+    > export BLOCKIO_API_KEY="sua api key"
+    
+    > export BLOCKIO_PIN="seu pin"
 
+    > export SOURCE_WALLET="sua carteira de criptomoedas"
+
+    O código da carteira deve coincidir com a API KEY da criptomoeda desejada.
+    
+2. Ative a virtualenv dentro da pasta `hiring`
+
+    > virtualenv hiring
+
+    > source hiring/bin/activate
+
+2. Instale os requisitos para rodar o sistema. Essa informação está no arquivo requirements.txt
+
+    > pip install -r requirements.txt
+
+3. Para Transferir o BTCT para a carteira definida execute o script transacao_main.py, ele transferirá 1 BTCT para a carteira. (minha conta só tem 2.9 BTCT, só poderá ser feito 2 vezes com esse valor).
+
+4. Rode os testes.
+
+    > python transacao_test.py
+
+5. Utilizar os métodos definidos em transacao.py como preferir. 
+    O método setup inicia o bloco de transacões com suas informações;
+
+    O método check_balance retorna o dictionaire com as informações do balanço da conta que foi consultada.
+
+    O método send_cryptocoin faz uma retirada de cryptomoeda de uma carteira para outra.
+
+6. Para sair do ambiente virtualenv digite:
+
+    > deactivate
 ## Objetivo
 Realizar transação de Bitcoin Testnet usando API
 
