@@ -1,6 +1,14 @@
 # Hiring
 Projeto exclusivo para processo seletivo
 
+## Uso
+
+>ruby hiring.rb
+
+## Teste
+
+>rspec spec hiring_spec.rb
+
 ## Instruções
 1. Faça um fork desse projeto
 2. Resolva o problema da forma mais simples que conseguir
